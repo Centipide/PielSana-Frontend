@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piel Sana</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="icon" href="/multimedia/page_logo.jpeg" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="page--header">
+        <img class="logo" src="multimedia/logo_pielSana.png" alt="logo" width="30%" height="30%">
+        <nav>
+            <ul class="links--list nav--list">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#about--us">Nosotros</a></li>
+                <li><a href="#reviews">Reseñas</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="video--container">
+            <video id="video--promo" controls autoplay loop muted>
+                <source src="/multimedia/promo1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Video con subtitulos
+
+        <div class="video--container">
+            <video id="video--promo" controls autoplay loop muted>
+                <source src="/multimedia/video_global_market.mp4" type="video/mp4">
+                <track src="/multimedia/spanish.vtt" kind="subtitles" srclang="es" label="Español" default>
+            </video>
+        </div>
+        -->
+
+        <!-- Video de youtube
+
+        <iframe width="900" height="515" src="https://www.youtube.com/embed/jNQXAC9IVRw" title="Me at the zoo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        -->
+
+        <section id="home">
+
+        </section>
+
+        <section id="products">
+            <h2 class="products--title">Nuestros Productos</h2>
+
+            <div class="products--content">
+                
+                <article class="product">
+                    <img class="product--image" src="/multimedia/formulaLimpieza.jpg" alt="Formula Limpieza">
+                    <div class="product--content">
+                        <h3 class = "product--name">Formula Limpieza</h3>
+                        <p class="product--description">
+                            Emulsión de higiene. Remueve impurezas y maquillaje. Recomendada para pieles secas, mixtas y deshidratadas.
+                        </p>
+                        <p class="product--price">
+                            $23000
+                        </p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="product">
+                    <img class="product--image" src="/multimedia/Hyaluronic4d.jpg" alt="Hyaluronic 4D Rich Cream">
+                    <div class="product--content">
+                        <h3 class = "product--name">Hyaluronic 4D Rich Cream</h3>
+                        <p class="product--description">
+                            Crema emoliente con efecto relleno
+                        </p>
+                        <p class="product--price">
+                            $46000
+                        </p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="product">
+                    <img class="product--image" src="/multimedia/BiosmoticWaterBooster.jpg" alt="Biosmotic Water Booster">
+                    <div class="product--content">
+                        <h3 class = "product--name">Biosmotic Water Booster</h3>
+                        <p class="product--description">
+                            Loción de hidratación profunda Formulada con un activo biotecnológico bifuncional osmoprotector hidratante. Además, contiene Carrageninas que ayudan a mejorar la elasticidad y el aspecto global de la piel. Ayuda a hidratar de forma instantánea, prolongada y duradera.
+                        </p>
+                        <p class="product--price">
+                            $10000
+                        </p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="about--us">
+
+        </section>
+
+        <section id="reviews">
+
+        </section>
+
+        <section id="contact">
+            <div class= "contact--content">
+                <form action="https://formspree.io/f/mrbyakqo" method="post">
+                    <fieldset>
+                        <h3 class="fieldset--title">Información Personal</h3>
+
+                        <div class="form--group">
+                            <label for="nombre" class="form--label">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" class="form--input">
+                        </div>
+
+                        <div class="form--group">
+                            <label for="email" class="form--label">Email:</label>
+                            <input type="email" id="email" name="email" class="form--input">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <h3 class="fieldset--title">Motivo y Mensaje</h3>
+
+                        <div class="form--group">
+                            <label for="motivo" class="form--label">Motivo:</label>
+                            <select id="motivo" name="motivo" class="form--input">
+                                <option value="">-- Seleccione una opción --</option>
+                                <option value="1">Consulta</option>
+                                <option value="2">Soporte</option>
+                                <option value="3">Otros</option>
+                            </select>
+                        </div>
+
+                        <div class="form--group">
+                            <label for="mensaje" class="form--label">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" cols="30" class="form--input"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <section class="contact--buttons">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpiar</button>
+                    </section>
+                </form>
+            </div>
+        </section>
+
+        <!-- Tabla
+
+        <section>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Mensaje</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+
+
+                <tbdoy>
+                    <tr>
+                        <td colspan="4">Mensajes pendientes de respuesta</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ana López</td>
+                        <td>analopez@gmail.com</td>
+                        <td>Pregunta sobre stock del auricular X.</td>
+                        <td>Pendiente</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Díaz</td>
+                        <td>carlosdias@gmail.com</td>
+                        <td>Consulta por envío internacional.</td>
+                        <td>Respondido</td>
+                    </tr>
+                    <tr>
+                        <td>Karina Melendez</td>
+                        <td>karinamelendez@gmail.com</td>
+                        <td>Interesada en paquete promocional</td>
+                        <td>Respondido</td>
+                    </tr>
+
+                </tbdoy>
+            </table>
+        </section>
+        -->
+
+    </main>
+    <footer class="page--footer">
+        <div class="footer--content">
+            <div>
+                <ul class="links--list icons--list">
+                    <li><a href="#" class="fa-brands fa-whatsapp"></a></li>
+                    <li><a href="#" class="fa-brands fa-instagram"></a></li>
+                    <li><a href="#" class="fa-brands fa-facebook-f"></a></li>
+                    <li><a href="mailto:info@globalmarket.com" class="fa-solid fa-envelope"></a></li>
+                    <li><a href="#" class="fa-brands fa-x-twitter"></a></li>
+                    <li><a href="#" class="fa-brands fa-youtube"></a></li>
+                </ul>
+            </div>
+
+            <p class="copyright">© 2025 Piel Sana. Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
