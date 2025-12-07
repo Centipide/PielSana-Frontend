@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piel Sana</title>
+    <title>*************</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,207 +20,116 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
     <link rel="icon" href="/multimedia/page_logo.jpeg" type="image/x-icon">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="page--header">
-        <img class="logo" src="multimedia/logo_pielSana.png" alt="logo" width="30%" height="30%">
-        <nav>
-            <ul class="links--list nav--list">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#products">Productos</a></li>
-                <li><a href="#about--us">Nosotros</a></li>
-                <li><a href="#reviews">Reseñas</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
+        <!--
+        <div class="container text-center py-1">
+            <div class="row">
+                <div class="col">
+                    <a href="#">
+                        <img src="multimedia/logo_pielSana.png" alt="logo" class="img-fluid" style="max-width: 150px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+        -->
+
+        <nav class="navbar navbar-expand-md bg-body-tertiary shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center py-0" href="#">
+                    <img src="multimedia/logo_pielSana.png" alt="logo" class="img-fluid" style="max-width: 150px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto fs-5 gap-3 px-5">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#products">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about--us">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#reviews">Reseñas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+
+            </div>
         </nav>
     </header>
 
     <main>
-        <div class="video--container">
-            <video id="video--promo" controls autoplay loop muted>
-                <source src="/multimedia/promo1.mp4" type="video/mp4">
-            </video>
+        <div class="container text-center py-2">
+            <div class="row">
+                <div class="col">
+                    <video controls autoplay loop muted style="width: 100%; max-width: 500px;">
+                        <source src="/multimedia/promo1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
         </div>
-
-        <!-- Video con subtitulos
-
-        <div class="video--container">
-            <video id="video--promo" controls autoplay loop muted>
-                <source src="/multimedia/video_global_market.mp4" type="video/mp4">
-                <track src="/multimedia/spanish.vtt" kind="subtitles" srclang="es" label="Español" default>
-            </video>
-        </div>
-        -->
-
-        <!-- Video de youtube
-
-        <iframe width="900" height="515" src="https://www.youtube.com/embed/jNQXAC9IVRw" title="Me at the zoo"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
-        -->
 
         <section id="home">
 
         </section>
 
         <section id="products">
-            <h2 class="products--title">Nuestros Productos</h2>
-
-            <div class="products--content">
-                
-                <article class="product">
-                    <img class="product--image" src="/multimedia/formulaLimpieza.jpg" alt="Formula Limpieza">
-                    <div class="product--content">
-                        <h3 class = "product--name">Formula Limpieza</h3>
-                        <p class="product--description">
-                            Emulsión de higiene. Remueve impurezas y maquillaje. Recomendada para pieles secas, mixtas y deshidratadas.
-                        </p>
-                        <p class="product--price">
-                            $23000
-                        </p>
-                        <button>Agregar al carrito</button>
-                    </div>
-                </article>
-
-                <article class="product">
-                    <img class="product--image" src="/multimedia/Hyaluronic4d.jpg" alt="Hyaluronic 4D Rich Cream">
-                    <div class="product--content">
-                        <h3 class = "product--name">Hyaluronic 4D Rich Cream</h3>
-                        <p class="product--description">
-                            Crema emoliente con efecto relleno
-                        </p>
-                        <p class="product--price">
-                            $46000
-                        </p>
-                        <button>Agregar al carrito</button>
-                    </div>
-                </article>
-
-                <article class="product">
-                    <img class="product--image" src="/multimedia/BiosmoticWaterBooster.jpg" alt="Biosmotic Water Booster">
-                    <div class="product--content">
-                        <h3 class = "product--name">Biosmotic Water Booster</h3>
-                        <p class="product--description">
-                            Loción de hidratación profunda Formulada con un activo biotecnológico bifuncional osmoprotector hidratante. Además, contiene Carrageninas que ayudan a mejorar la elasticidad y el aspecto global de la piel. Ayuda a hidratar de forma instantánea, prolongada y duradera.
-                        </p>
-                        <p class="product--price">
-                            $10000
-                        </p>
-                        <button>Agregar al carrito</button>
-                    </div>
-                </article>
-
-
-                <article class="product">
-                    <img class="product--image" src="/multimedia/BiosmoticWaterBooster.jpg" alt="Biosmotic Water Booster">
-                    <div class="product--content">
-                        <h3 class = "product--name">Biosmotic Water Booster</h3>
-                        <p class="product--description">
-                            Loción de hidratación profunda Formulada con un activo biotecnológico bifuncional osmoprotector hidratante. Además, contiene Carrageninas que ayudan a mejorar la elasticidad y el aspecto global de la piel. Ayuda a hidratar de forma instantánea, prolongada y duradera.
-                        </p>
-                        <p class="product--price">
-                            $10000
-                        </p>
-                        <button>Agregar al carrito</button>
-                    </div>
-                </article>
-
-
-                <article class="product">
-                    <img class="product--image" src="/multimedia/BiosmoticWaterBooster.jpg" alt="Biosmotic Water Booster">
-                    <div class="product--content">
-                        <h3 class = "product--name">Biosmotic Water Booster</h3>
-                        <p class="product--description">
-                            Loción de hidratación profunda Formulada con un activo biotecnológico bifuncional osmoprotector hidratante. Además, contiene Carrageninas que ayudan a mejorar la elasticidad y el aspecto global de la piel. Ayuda a hidratar de forma instantánea, prolongada y duradera.
-                        </p>
-                        <p class="product--price">
-                            $10000
-                        </p>
-                        <button>Agregar al carrito</button>
-                    </div>
-                </article>
-
-
-                <article class="product">
-                    <img class="product--image" src="/multimedia/BiosmoticWaterBooster.jpg" alt="Biosmotic Water Booster">
-                    <div class="product--content">
-                        <h3 class = "product--name">Biosmotic Water Booster</h3>
-                        <p class="product--description">
-                            Loción de hidratación profunda Formulada con un activo biotecnológico bifuncional osmoprotector hidratante. Además, contiene Carrageninas que ayudan a mejorar la elasticidad y el aspecto global de la piel. Ayuda a hidratar de forma instantánea, prolongada y duradera.
-                        </p>
-                        <p class="product--price">
-                            $10000
-                        </p>
-                        <button>Agregar al carrito</button>
-                    </div>
-                </article>
-                
-                <article class="product">
-                    <img class="product--image" src="/multimedia/BiosmoticWaterBooster.jpg" alt="Biosmotic Water Booster">
-                    <div class="product--content">
-                        <h3 class = "product--name">Biosmotic Water Booster</h3>
-                        <p class="product--description">
-                            Loción de hidratación profunda Formulada con un activo biotecnológico bifuncional osmoprotector hidratante. Además, contiene Carrageninas que ayudan a mejorar la elasticidad y el aspecto global de la piel. Ayuda a hidratar de forma instantánea, prolongada y duradera.
-                        </p>
-                        <p class="product--price">
-                            $10000
-                        </p>
-                        <button>Agregar al carrito</button>
-                    </div>
-                </article>
-
-
-                <article class="product">
-                    <img class="product--image" src="/multimedia/BiosmoticWaterBooster.jpg" alt="Biosmotic Water Booster">
-                    <div class="product--content">
-                        <h3 class = "product--name">Biosmotic Water Booster</h3>
-                        <p class="product--description">
-                            Loción de hidratación profunda Formulada con un activo biotecnológico bifuncional osmoprotector hidratante. Además, contiene Carrageninas que ayudan a mejorar la elasticidad y el aspecto global de la piel. Ayuda a hidratar de forma instantánea, prolongada y duradera.
-                        </p>
-                        <p class="product--price">
-                            $10000
-                        </p>
-                        <button>Agregar al carrito</button>
-                    </div>
-                </article>
-
-
-                <article class="product">
-                    <img class="product--image" src="/multimedia/BiosmoticWaterBooster.jpg" alt="Biosmotic Water Booster">
-                    <div class="product--content">
-                        <h3 class = "product--name">Biosmotic Water Booster</h3>
-                        <p class="product--description">
-                            Loción de hidratación profunda Formulada con un activo biotecnológico bifuncional osmoprotector hidratante. Además, contiene Carrageninas que ayudan a mejorar la elasticidad y el aspecto global de la piel. Ayuda a hidratar de forma instantánea, prolongada y duradera.
-                        </p>
-                        <p class="product--price">
-                            $10000
-                        </p>
-                        <button>Agregar al carrito</button>
-                    </div>
-                </article>
-
-
-                <article class="product">
-                    <img class="product--image" src="/multimedia/BiosmoticWaterBooster.jpg" alt="Biosmotic Water Booster">
-                    <div class="product--content">
-                        <h3 class = "product--name">Biosmotic Water Booster</h3>
-                        <p class="product--description">
-                            Loción de hidratación profunda Formulada con un activo biotecnológico bifuncional osmoprotector hidratante. Además, contiene Carrageninas que ayudan a mejorar la elasticidad y el aspecto global de la piel. Ayuda a hidratar de forma instantánea, prolongada y duradera.
-                        </p>
-                        <p class="product--price">
-                            $10000
-                        </p>
-                        <button>Agregar al carrito</button>
-                    </div>
-                </article>
+            <div class="container">
+                <h2>Nuestros Productos</h2>
             </div>
+
+            <div class="container py-3">
+                <div class="row g-3"> <!-- g-3 agrega espacio entre columnas y filas -->
+
+                    <!-- Pantallas chicas: ocupa 12 columnas, pantallas small (tablets): 6, large (comp): 3-->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card’s content.Some quick example text to build on the card title and
+                                    make up the bulk of the card’s content.Some quick example text to build on the card
+                                    title and make up the bulk of the card’s content.Some quick example text to build on
+                                    the card title and make up the bulk of the card’s content</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Lorem ipsum...</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Lorem ipsum...</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </section>
 
         <section id="about--us">
@@ -231,112 +140,91 @@
 
         </section>
 
+        
+        <!-- CORREGIR ONBLUR="VALIDATE"-->
+
         <section id="contact">
-            <div class= "contact--content">
-                <form action="https://formspree.io/f/mrbyakqo" method="post">
-                    <fieldset>
-                        <h3 class="fieldset--title">Información Personal</h3>
+        <div class="container-fluid mx-auto">
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-5 col-lg-8 col-md-9 col-11 text-center">
+                    <div class="card contact--card">
+                        <h5 class="text-center mb-4">Información Personal</h5>
+                        <form class="form-card" onsubmit="event.preventDefault()">
+                            <div class="row justify-content-between">
 
-                        <div class="form--group">
-                            <label for="nombre" class="form--label">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" class="form--input">
-                        </div>
+                                <!--dflex = display: flex | flex-column = flex-direction: column-->
+                                <div class="d-flex flex-column text-start"> 
+                                    <label for="name" class="form-label px-3 m-0">Nombre Completo<span class="text-danger"> *</span>
+                                    
+                                    <!-- form-control estiliza el input-->
+                                    </label> <input class="form-control" type="text"
+                                        id="name" name="name" placeholder="Ingrese su nombre completo"
+                                        onblur="validate(1)">
+                                </div>
+                            </div>
+                            <div class="row justify-content-between">
+                                <div class="d-flex flex-column text-start"> 
+                                    <label for="email" class="form-label px-3 m-0">Email<span
+                                            class="text-danger"> *</span></label> <input class="form-control" type="text" id="email" name="email" placeholder="ejemplo@gmail.com" onblur="validate(3) "> </div>
+                            </div>
 
-                        <div class="form--group">
-                            <label for="email" class="form--label">Email:</label>
-                            <input type="email" id="email" name="email" class="form--input">
-                        </div>
-                    </fieldset>
+                            <h5 class="text-center mb-4 mt-4">Motivo y Mensaje</h5>
+                            <div class="row justify-content-between">
+                                <div class="d-flex flex-column text-start"> 
+                                    <label for="motive" class="form-label px-3 m-0">Motivo<span
+                                            class="text-danger"> *</span>
+                                    </label>
+                                    <select class="form-select mb-1" id="motive" name="motive">
+                                        <option value="">-- Seleccione una opción --</option>
+                                        <option value="1">Consulta</option>
+                                        <option value="2">Soporte</option>
+                                        <option value="3">Otros</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                    <fieldset>
-                        <h3 class="fieldset--title">Motivo y Mensaje</h3>
+                            <div class="row justify-content-between">
+                                <div class="d-flex flex-column text-start"> <label for="message" class="form-label px-3 m-0">Mensaje<span
+                                class="text-danger"> *</span></label> <textarea class="form-control" id="message" name="message" rows="4" cols="30"></textarea></div>
+                            </div>
 
-                        <div class="form--group">
-                            <label for="motivo" class="form--label">Motivo:</label>
-                            <select id="motivo" name="motivo" class="form--input">
-                                <option value="">-- Seleccione una opción --</option>
-                                <option value="1">Consulta</option>
-                                <option value="2">Soporte</option>
-                                <option value="3">Otros</option>
-                            </select>
-                        </div>
-
-                        <div class="form--group">
-                            <label for="mensaje" class="form--label">Mensaje:</label>
-                            <textarea id="mensaje" name="mensaje" rows="4" cols="30" class="form--input"></textarea>
-                        </div>
-                    </fieldset>
-
-                    <section class="contact--buttons">
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Limpiar</button>
-                    </section>
-                </form>
+                            <section class="d-flex justify-content-start gap-3 mt-3">
+                                <button type="submit" class="btn btn-success w-50">Enviar</button>
+                                <button type="reset" class="btn btn-secondary w-50">Limpiar</button>
+                            </section>
+                        </form>
+                    </div>
+                </div>
             </div>
+        </div>
         </section>
-
-        <!-- Tabla
-
-        <section>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Correo</th>
-                        <th>Mensaje</th>
-                        <th>Estado</th>
-                    </tr>
-                </thead>
-
-
-                <tbdoy>
-                    <tr>
-                        <td colspan="4">Mensajes pendientes de respuesta</td>
-                    </tr>
-
-                    <tr>
-                        <td>Ana López</td>
-                        <td>analopez@gmail.com</td>
-                        <td>Pregunta sobre stock del auricular X.</td>
-                        <td>Pendiente</td>
-                    </tr>
-                    <tr>
-                        <td>Carlos Díaz</td>
-                        <td>carlosdias@gmail.com</td>
-                        <td>Consulta por envío internacional.</td>
-                        <td>Respondido</td>
-                    </tr>
-                    <tr>
-                        <td>Karina Melendez</td>
-                        <td>karinamelendez@gmail.com</td>
-                        <td>Interesada en paquete promocional</td>
-                        <td>Respondido</td>
-                    </tr>
-
-                </tbdoy>
-            </table>
-        </section>
-        -->
 
     </main>
+
+
     <footer class="page--footer">
         <div class="footer--content">
             <div>
                 <ul class="links--list icons--list">
-                    <li><a href="#" class="fa-brands fa-whatsapp"></a></li>
-                    <li><a href="#" class="fa-brands fa-instagram"></a></li>
-                    <li><a href="#" class="fa-brands fa-facebook-f"></a></li>
-                    <li><a href="mailto:info@globalmarket.com" class="fa-solid fa-envelope"></a></li>
-                    <li><a href="#" class="fa-brands fa-x-twitter"></a></li>
-                    <li><a href="#" class="fa-brands fa-youtube"></a></li>
+                    <li><a href="#" aria-label="WhatsApp" title="WhatsApp" class="fa-brands fa-whatsapp"></a></li>
+                    <li><a href="#" aria-label="Instagram" title="Instagram" class="fa-brands fa-instagram"></a></li>
+                    <li><a href="#" aria-label="Facebook" title="Facebook" class="fa-brands fa-facebook-f"></a></li>
+                    <li><a href="mailto:info@globalmarket.com" aria-label="Enviar email" title="Email"
+                            class="fa-solid fa-envelope"></a></li>
+                    <li><a href="#" aria-label="X (Twitter)" title="X" class="fa-brands fa-x-twitter"></a></li>
+                    <li><a href="#" aria-label="YouTube" title="YouTube" class="fa-brands fa-youtube"></a></li>
                 </ul>
             </div>
 
             <p class="copyright">© 2025 Piel Sana. Todos los derechos reservados.</p>
         </div>
-
     </footer>
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
