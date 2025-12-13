@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "img": "/multimedia/BiosmoticWaterBooster.jpg",
+        "name": "Biosmotic Water Booster",
+        "description": "descripcion ejemplo",
+        "price": 13000
+    },
+    {
+        "id": 1,
+        "img":"/multimedia/formulaLimpieza.jpg",
+        "name": "Formula Limpieza",
+        "description":"descripcion ejemplo",
+        "price": 15000
+    },
+    {
+        "id": 2,
+        "img":"/multimedia/Hyaluronic4d.jpg",
+        "name": "Hyaluronic 4d",
+        "description":"descripcion ejemplo",
+        "price": 20000
+    }
+]

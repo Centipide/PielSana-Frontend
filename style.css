@@ -10,6 +10,78 @@ body {
     min-height: 100vh;
 }
 
+/*products*/
+.product--card {
+    border: none;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*cart*/
+#cart{
+    padding: 60px 60px;
+}
+
+#cart .container{
+    max-width: 650px;
+}
+
+/*reviews*/
+#reviews {
+    background-color: #bdd4ad;
+    padding: 60px 60px;
+}
+
+.reviews--card {
+    padding: 20px 0px;
+    border: none;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.reviews--card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.18);
+}
+
+
+.card--img--top{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*contacto*/
+#contact {
+    background-color: #4b6758;
+    padding: 60px 60px;
+}
+
+
+input,
+textarea,
+button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.contact--card {
+    padding: 30px 40px;
+    border: none;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+
 /*footer*/
 .page--footer {
     background-color: #3D3D3D;
@@ -59,28 +131,5 @@ body {
     margin: 0;
 }
 
-
-/*contacto*/
-#contact {
-    background-color: #4b6758;
-}
-
-input,
-textarea,
-button {
-    padding: 8px 15px;
-    border-radius: 5px;
-    margin: 5px 0px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    font-size: 18px;
-    font-weight: 300
-}
-
-.contact--card {
-    padding: 30px 40px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    border: none !important;
-    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
-}
+/*VER MEDIA QUERIES PARA 'DESAPARECER' ELEMENTOS SEGUN EL TAMAÑO DE PANTALLA.
+(bootstrap trabaja de por si con media queries)*/

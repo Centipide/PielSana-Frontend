@@ -66,6 +66,7 @@
         </nav>
     </header>
 
+
     <main>
         <div class="container text-center py-2">
             <div class="row">
@@ -87,57 +88,86 @@
             </div>
 
             <div class="container py-3">
-                <div class="row g-3"> <!-- g-3 agrega espacio entre columnas y filas -->
-
-                    <!-- Pantallas chicas: ocupa 12 columnas, pantallas small (tablets): 6, large (comp): 3-->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card’s content.Some quick example text to build on the card title and
-                                    make up the bulk of the card’s content.Some quick example text to build on the card
-                                    title and make up the bulk of the card’s content.Some quick example text to build on
-                                    the card title and make up the bulk of the card’s content</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Lorem ipsum...</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Lorem ipsum...</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row g-3 justify-content-center align-items-center" id="productsContainer"> <!-- g-3 agrega espacio entre columnas y filas -->
 
                 </div>
             </div>
-
         </section>
+
+
+        <section id="cart">
+            <div class="container py-3">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <h2 class="">Carrito de compras</h2>
+                    </div>
+                    <div class="col-auto position-relative">
+                        <i class="fa-solid fa-cart-shopping fs-5"></i>
+                        <span class="cart--counter position-absolute top-0 start-100 translate-middle rounded-pill bg-dark text-white px-2">
+                            0
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <ul id="cartList" class="list-group">
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary mt-2 mb-2" id="clearCartBtn">
+                    Vaciar carrito
+                </button>
+            </div>
+        </section>
+
 
         <section id="about--us">
 
         </section>
 
-        <section id="reviews">
 
+
+        <section id="reviews">
+            <div class="container py-3">
+                <div class="row g-5 justify-content-center">
+                    
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card reviews--card align-items-center text-center">
+                            <img src="/multimedia/logo_pielSana.png" class="card--img--top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Persona x</h5>
+                                <h5>★★★★★</h5>
+                                <p class="card-text">“Excelente calidad y muy buena atención. Los productos rinden un montón.”</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card reviews--card align-items-center text-center">
+                            <img src="/multimedia/logo_pielSana.png" class="card--img--top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Persona y</h5>
+                                <h5>★★★★★</h5>
+                                <p class="card-text">“Llegó todo perfecto y súper rápido. Los limpiadores tienen un aroma increíble. Muy recomendable.”</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card reviews--card align-items-center text-center">
+                            <img src="/multimedia/logo_pielSana.png" class="card--img--top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Persona z</h5>
+                                <h5>★★★★★</h5>
+                                <p class="card-text">“Compré para probar y terminé encantado. Buenos precios y resultados visibles desde el primer uso.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         
@@ -158,14 +188,13 @@
                                     
                                     <!-- form-control estiliza el input-->
                                     </label> <input class="form-control" type="text"
-                                        id="name" name="name" placeholder="Ingrese su nombre completo"
-                                        onblur="validate(1)">
+                                        id="name" name="name" autocomplete="name" placeholder="Ingrese su nombre completo">
                                 </div>
                             </div>
                             <div class="row justify-content-between">
                                 <div class="d-flex flex-column text-start"> 
                                     <label for="email" class="form-label px-3 m-0">Email<span
-                                            class="text-danger"> *</span></label> <input class="form-control" type="text" id="email" name="email" placeholder="ejemplo@gmail.com" onblur="validate(3) "> </div>
+                                            class="text-danger"> *</span></label> <input class="form-control" type="email" id="email" name="email" autocomplete="email" placeholder="ejemplo@gmail.com" onblur="validate(3) "> </div>
                             </div>
 
                             <h5 class="text-center mb-4 mt-4">Motivo y Mensaje</h5>
@@ -225,6 +254,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
