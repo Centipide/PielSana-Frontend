@@ -197,7 +197,7 @@
                 <div class="col-xl-5 col-lg-8 col-md-9 col-sm-12 col-12 text-center">
                     <div class="card contact--card">
                         <h5 class="text-center mb-4">Información Personal</h5>
-                        <form class="form-card" onsubmit="event.preventDefault()">
+                        <form class="form-card" action="https://formspree.io/f/mrbyakqo" method="post">
                             <div class="row justify-content-between">
 
                                 <!--dflex = display: flex | flex-column = flex-direction: column-->
@@ -206,13 +206,13 @@
                                     
                                     <!-- form-control estiliza el input-->
                                     </label> <input class="form-control" type="text"
-                                        id="name" name="name" autocomplete="name" placeholder="Ingrese su nombre completo">
+                                        id="name" name="name" autocomplete="name" placeholder="Ingrese su nombre completo" required>
                                 </div>
                             </div>
                             <div class="row justify-content-between">
                                 <div class="d-flex flex-column text-start"> 
                                     <label for="email" class="form-label px-3 m-0">Email<span
-                                            class="text-danger"> *</span></label> <input class="form-control" type="email" id="email" name="email" autocomplete="email" placeholder="ejemplo@gmail.com" onblur="validate(3) "> </div>
+                                            class="text-danger"> *</span></label> <input class="form-control" type="email" id="email" name="email" autocomplete="email" placeholder="ejemplo@gmail.com" required> </div>
                             </div>
 
                             <h5 class="text-center mb-4 mt-4">Motivo y Mensaje</h5>
@@ -221,7 +221,7 @@
                                     <label for="motive" class="form-label px-3 m-0">Motivo<span
                                             class="text-danger"> *</span>
                                     </label>
-                                    <select class="form-select mb-1" id="motive" name="motive">
+                                    <select class="form-select mb-1" id="motive" name="motive" required>
                                         <option value="">-- Seleccione una opción --</option>
                                         <option value="1">Consulta</option>
                                         <option value="2">Soporte</option>
@@ -232,7 +232,7 @@
 
                             <div class="row justify-content-between">
                                 <div class="d-flex flex-column text-start"> <label for="message" class="form-label px-3 m-0">Mensaje<span
-                                class="text-danger"> *</span></label> <textarea class="form-control" id="message" name="message" rows="4" cols="30"></textarea></div>
+                                class="text-danger"> *</span></label> <textarea class="form-control" id="message" name="message" rows="4" cols="30" required></textarea></div>
                             </div>
 
                             <section class="d-flex justify-content-start gap-3 mt-3">

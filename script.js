@@ -75,7 +75,7 @@ function insertProducts(productsList){
                         ${currentProd.price.toLocaleString("es-AR", {style: "currency", currency: "ARS"})}
                     </p>
 
-                    <p><a class="link-opacity-25-hover" href="#." data-description="descripcionEjemplo">Ver descripción</a></p>
+                    <p><a class="link-opacity-25-hover" href="#." data-description="${currentProd.description}">Ver descripción</a></p>
                     <div class="descriptionContainer">
                     </div>
                     <button type="button" class="btn btn-dark" data-id="${currentProd.id}">
