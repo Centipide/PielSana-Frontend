@@ -70,7 +70,7 @@ function insertProducts(productsList){
             <div class="card product--card">
                 <img src=${currentProd.img} alt="${currentProd.name}">
                 <div class="card-body">
-                    <h5 class="card-title">${currentProd.name}</h5>
+                    <h5 class="card--title">${currentProd.name}</h5>
                     <p class="card-text">
                         ${currentProd.price.toLocaleString("es-AR", {style: "currency", currency: "ARS"})}
                     </p>

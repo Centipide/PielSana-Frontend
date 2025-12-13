@@ -1,6 +1,7 @@
-# Preentrega de proyecto
+# Entrega de proyecto
 
-Trabajos realizados durante las clases.
+El proyecto consiste en el desarrollo de una página web orientada a la venta de productos de cuidado facial, con un diseño responsivo, una estructura clara y una experiencia de usuario sencilla e intuitiva.
+La página permite visualizar productos, conocer sus precios, acceder a información adicional y realizar consultas a través de un formulario de contacto.
 
 
 ## Integración de servicios externos
@@ -34,3 +35,19 @@ Para Configurarlo:
   <button type="submit">Send</button>
 </form>
 ```
+
+### Bootstrap
+
+Bootstrap es un framework de CSS que facilita el armado del diseño y la estructura de la página web, permitiendo que el sitio sea responsivo y se adapte a distintos tamaños de pantalla.
+
+En este proyecto se utilizó Bootstrap para:
+
+- Organizar el contenido usando su sistema de grid (container, row, col-*).
+
+- Crear tarjetas (cards) para mostrar los productos de forma ordenada.
+
+- Estilizar botones y formularios sin tener que escribir todo el CSS desde cero.
+
+- Asegurar que la página se vea correctamente tanto en computadoras como en dispositivos móviles.
+
+Bootstrap fue integrado mediante su CDN oficial y se utilizó junto con CSS propio para personalizar algunos estilos del sitio.

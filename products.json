@@ -3,21 +3,21 @@
         "id": 0,
         "img": "/multimedia/BiosmoticWaterBooster.jpg",
         "name": "Biosmotic Water Booster",
-        "description": "descripcion ejemplo",
+        "description": "Suero hidratante de rápida absorción que ayuda a mantener la piel humectada durante todo el día. Aporta frescura y mejora la elasticidad de la piel.",
         "price": 13000
     },
     {
         "id": 1,
         "img":"/multimedia/formulaLimpieza.jpg",
         "name": "Formula Limpieza",
-        "description":"descripcion ejemplo",
+        "description":"Limpiador facial suave que elimina impurezas y restos de maquillaje sin resecar la piel. Ideal para el uso diario y para todo tipo de piel.",
         "price": 15000
     },
     {
         "id": 2,
         "img":"/multimedia/Hyaluronic4d.jpg",
         "name": "Hyaluronic 4d",
-        "description":"descripcion ejemplo",
+        "description":"Tratamiento con ácido hialurónico que ayuda a hidratar en profundidad, mejorando la textura de la piel y reduciendo la sensación de tirantez.",
         "price": 20000
     }
 ]
