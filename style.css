@@ -16,6 +16,10 @@ body {
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
+.card--title{
+    min-height: 3rem;
+}
+
 /*cart*/
 #cart{
     padding: 60px 60px;
@@ -131,5 +135,11 @@ button {
     margin: 0;
 }
 
-/*VER MEDIA QUERIES PARA 'DESAPARECER' ELEMENTOS SEGUN EL TAMAÑO DE PANTALLA.
-(bootstrap trabaja de por si con media queries)*/
+/* Media Queries */
+@media(max-width: 600px){
+    /*contacto*/
+    #contact {
+        background-color: #4b6758;
+        padding: 10px 10px;
+    }
+}

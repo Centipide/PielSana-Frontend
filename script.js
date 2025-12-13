@@ -63,7 +63,7 @@ function insertProducts(productsList){
         const currentProd = productsList[i];
 
         const newElem = document.createElement("div");
-        newElem.className = "col-12 col-sm-6 col-lg-3";
+        newElem.className = "col-12 col-sm-6 col-lg-3 d-flex";
 
         //inner -> accede al contenido
         newElem.innerHTML = `
